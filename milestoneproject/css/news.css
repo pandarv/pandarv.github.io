@@ -1,0 +1,91 @@
+@import url("styles.css");
+
+header {
+  height: 100px;
+}
+
+/*******************
+------- Main -------
+********************/
+
+main {
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 6rem;
+}
+
+main button.btn {
+  border: none;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+main h5 {
+  padding-inline-start: 0.8rem;
+  font-weight: 500;
+}
+
+form {
+  margin-inline: auto;
+  margin-block-end: 2rem;
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main input {
+  flex-basis: 75%;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  background-color: var(--white-color);
+  width: 100%;
+  padding: 1rem;
+  transition: border 0.3s ease-out;
+}
+form input:hover,
+form input:focus {
+  border: 1px solid var(--tertiary-text);
+}
+
+main section ul {
+  padding-block-start: 3rem;
+}
+
+main section ul li {
+  background-color: var(--white-color);
+  margin-block-end: 0.2rem;
+  padding-inline: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+main section ul li a {
+  line-height: 1.7;
+  width: 80%;
+  color: var(--secondary-text);
+  padding: 0.8rem;
+}
+
+main section ul li span {
+  color: var(--secondary-text);
+  width: 6rem;
+  flex-shrink: 0;
+}
+
+main section ul li:last-child {
+  margin-block-end: 0;
+  /* padding-bottom: 0; */
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: min(100% - 2rem, var(--width));
+  }
+  main section ul {
+    padding-inline: 2rem;
+  }
+}
